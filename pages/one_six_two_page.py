@@ -9,11 +9,8 @@ class TestPage(BasePage):
         self.fill_input(self.locators.LAST_NAME,"Orlov")
         self.fill_input(self.locators.CITY,"Kurs")
         self.fill_input(self.locators.COUNTRY,"Russia")
-        self.click_element(self.locators.BTN_SUBMIT)
+        self.click_element(self.locators.BTN_DEFAULT)
 
     def find_element_and_click(self):
         self.find_element(self.locators.NEED_VALUE)
         self.click_element(self.locators.NEED_VALUE)
-
-
-

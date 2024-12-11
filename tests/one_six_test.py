@@ -1,7 +1,7 @@
 from pages.one_six_page import TestPage
-from pages.base_page import BasePage
+from conftest import driver
 import time
-from pages.locators import *
+
 
 
 def test_onesix(driver):
