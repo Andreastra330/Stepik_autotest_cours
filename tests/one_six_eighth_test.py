@@ -10,3 +10,5 @@ def test_onesix_2(driver):
     course_page.open()
     course_page.fill_all_and_click_btn()
     time.sleep(30)
+
+

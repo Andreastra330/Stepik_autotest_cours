@@ -36,3 +36,7 @@ class BasePage:
 
     def click_element(self,locator):
         return self.driver.find_element(*locator).click()
+
+    def get_attribute_element(self,locator):
+        element = self.find_element(locator)
+        return element
