@@ -1,6 +1,5 @@
 from pages.locators import *
 from pages.base_page import BasePage
-import math
 
 class TestPage(BasePage):
     locators = LocatorsTwoTwoThree

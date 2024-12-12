@@ -40,4 +40,9 @@ class LocatorsTwoTwoThree:
     DROPDOWN = (By.CSS_SELECTOR, "#dropdown")
     BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
 
-
+class LocatorsTwoTwoEight:
+    FIRST_NAME = (By.NAME, "firstname")
+    LAST_NAME = (By.NAME, "lastname")
+    EMAIL = (By.NAME, "email")
+    FILE = (By.ID, "file")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")

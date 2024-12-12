@@ -50,3 +50,6 @@ class BasePage:
         element= WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.XPATH, f"//*[text() = '{text}']")))
         self.driver.execute_script("arguments[0].scrollIntoView()", element)
         return element
+
+    def put_file(self,locator,path):
+        return self.driver.find_element(*locator).send_keys(path)
