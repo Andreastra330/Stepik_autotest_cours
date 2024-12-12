@@ -8,6 +8,7 @@ import sys
 from pages.locators import *
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.remote.switch_to import SwitchTo
 
 class BasePage:
     def __init__(self, driver,url):
@@ -53,3 +54,16 @@ class BasePage:
 
     def put_file(self,locator,path):
         return self.driver.find_element(*locator).send_keys(path)
+
+    def accept_allert(self):
+        self.driver.switch_to.alert.accept()
+
+    def dismiss_allert(self):
+        self.driver.switch_to.alert.dismiss()
+
+    def switch_to_next_tab(self):
+        self.driver.switch_to.window(self.driver.window_handles[1])
+
+    def text_present(self,locator,text,timeout=60):
+        element= WebDriverWait(self.driver, timeout).until(EC.text_to_be_present_in_element(locator,f"{text}"))
+        return element

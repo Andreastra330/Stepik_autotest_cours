@@ -46,3 +46,22 @@ class LocatorsTwoTwoEight:
     EMAIL = (By.NAME, "email")
     FILE = (By.ID, "file")
     BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
+
+class LocatorsTwoThreeFour:
+    BTN_FOR_ALERT = (By.XPATH, "//*[text() = 'I want to go on a magical journey!']")
+    VALUE = (By.ID, "input_value")
+    ANSWER = (By.ID, "answer")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
+
+class LocatorsTwoThreeSix:
+    MOVE_BUTTON = (By.CSS_SELECTOR, "button")
+    VALUE = (By.ID, "input_value")
+    ANSWER = (By.ID, "answer")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
+
+class LocatorsTwoFourEight:
+    PRICE = (By.ID, "price")
+    BTN_BOOK = (By.ID, "book")
+    VALUE = (By.ID, "input_value")
+    ANSWER = (By.ID, "answer")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
