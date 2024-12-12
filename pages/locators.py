@@ -9,5 +9,7 @@ class LocatorsOneSix:
     BTN_SUBMIT = (By.ID, "submit_button")
     BTN_DEFAULT = (By.XPATH, "//*[text() = 'Submit']")
     NEED_VALUE = dynamic_value()
+    TYPE_TEXT = (By.TAG_NAME, "input")
+
 
 

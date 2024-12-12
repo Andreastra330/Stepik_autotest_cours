@@ -22,6 +22,13 @@ class BasePage:
         self.driver.execute_script("arguments[0].scrollIntoView()", element)
         return element
 
+    def find_elements_and_fill(self, locator, timeout=60):
+        elements = WebDriverWait(self.driver, timeout).until(EC.presence_of_all_elements_located(locator))
+        for element in elements:
+            self.driver.execute_script("arguments[0].scrollIntoView()", element)
+            element.send_keys("Моё")
+        return elements
+
     def fill_input(self, locator, sending_text: str, timeout=60):
         element = WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located(locator))
         self.driver.execute_script("arguments[0].scrollIntoView()", element)
