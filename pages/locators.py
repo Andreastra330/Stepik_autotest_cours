@@ -27,3 +27,17 @@ class LocatorsTwoOneFive:
     RADIOBATTON = (By.ID, "robotsRule")
     BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
 
+class LocatorsTwoOneSix:
+    TREASURE = (By.ID, "treasure")
+    ANSWER = (By.ID, "answer")
+    CHECKBOX = (By.ID, "robotCheckbox")
+    RADIOBATTON = (By.ID, "robotsRule")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
+
+class LocatorsTwoTwoThree:
+    NUM1 = (By.CSS_SELECTOR, "#num1")
+    NUM2 = (By.CSS_SELECTOR, "#num2")
+    DROPDOWN = (By.CSS_SELECTOR, "#dropdown")
+    BTN_SUBMIT = (By.XPATH, "//*[text() = 'Submit']")
+
+

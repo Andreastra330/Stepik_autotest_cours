@@ -40,3 +40,13 @@ class BasePage:
     def get_attribute_element(self,locator):
         element = self.find_element(locator)
         return element
+
+    def get_attribute_element_value(self,locator,attribute="value"):
+        element = self.find_element(locator)
+        value = element.get_attribute(attribute)
+        return value
+
+    def find_element_with_text(self,text,timeout=60):
+        element= WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.XPATH, f"//*[text() = '{text}']")))
+        self.driver.execute_script("arguments[0].scrollIntoView()", element)
+        return element

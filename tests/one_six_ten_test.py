@@ -5,7 +5,7 @@ import time
 
 
 
-def test_onesix_2(driver):
+def test_one_sin_ten1(driver):
     course_page = TestPage(driver, "https://suninjuly.github.io/registration1.html")
     course_page.open()
     course_page.fill_all_and_click_btn()
@@ -14,7 +14,7 @@ def test_onesix_2(driver):
     assert "Congratulations! You have successfully registered!" == text
     time.sleep(2)
 
-def test_onesix_3(driver):
+def test_one_sin_ten2(driver):
     course_page = TestPage(driver, "https://suninjuly.github.io/registration2.html")
     course_page.open()
     course_page.fill_all_and_click_btn()

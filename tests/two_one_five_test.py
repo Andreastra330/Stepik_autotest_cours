@@ -5,7 +5,7 @@ import time
 
 
 
-def test_onesix_2(driver):
+def test_two_one_five(driver):
     course_page = TestPage(driver, "https://suninjuly.github.io/math.html")
     course_page.open()
     course_page.fill_and_click_btn()
